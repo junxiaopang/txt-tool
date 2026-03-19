@@ -1,0 +1,165 @@
+# ===============================
+# TXT 小说工具箱 .gitignore 文件
+# ===============================
+
+# =================================
+# 操作系统相关文件
+# =================================
+
+### macOS ###
+# 通用文件
+.DS_Store
+.AppleDouble
+.LSOverride
+# 图标文件（必须以两个 \r 结束）
+Icon
+
+# 缩略图
+._*
+
+# 可能出现在卷根目录的文件
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# 可能在远程 AFP 共享上创建的目录
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# iCloud 生成的文件
+*.icloud
+
+### Windows ###
+# 通用文件
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# 临时文件
+*.tmp
+*.temp
+
+# 回收站
+$RECYCLE.BIN/
+
+# 系统文件
+Desktop.ini
+
+### Linux ###
+# 临时文件
+*~
+
+# 编辑器文件
+.*.swp
+.*.swo
+
+# =================================
+# 包管理器
+# =================================
+
+# npm
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# pnpm
+pnpm-debug.log*
+
+# =================================
+# Next.js 相关
+# =================================
+
+# 构建产物
+/.next/
+/out/
+/build/
+
+# 依赖
+/node_modules
+/.pnp
+.pnp.js
+
+# 本地环境文件
+.env*.local
+
+# Vercel 部署
+.vercel
+
+# =================================
+# TypeScript 相关
+# =================================
+
+# 构建信息
+*.tsbuildinfo
+next-env.d.ts
+
+# 类型定义文件（如果使用单独的类型目录）
+# types/
+
+# =================================
+# 测试相关
+# =================================
+
+# 测试覆盖率
+/coverage
+
+# 测试报告
+/test-results
+/playwright-report
+
+# =================================
+# 编辑器相关
+# =================================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =================================
+# 其他
+# =================================
+
+# 证书文件
+*.pem
+
+# 日志文件
+logs
+*.log
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+
+# 环境变量文件（如果未使用 .env*.local）
+.env
+
+
