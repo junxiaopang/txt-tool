@@ -1,5 +1,5 @@
 import { ThemeToggle } from "@/components/ThemeToggle"
-import { Wrench, SplitSquareHorizontal, FileText } from "lucide-react"
+import { Wrench, SplitSquareHorizontal, FileText, BookOpen } from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -32,7 +32,20 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-3">
+          {/* 章节预览工具 */}
+          <Link href="/preview" className="group">
+            <div className="rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] p-8 transition-all hover:border-[var(--accent-color)] hover:shadow-lg hover:shadow-violet-500/10">
+              <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-violet-500/20 mb-6 group-hover:bg-violet-500/30 transition-all">
+                <BookOpen className="h-8 w-8 text-violet-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-2">章节预览</h3>
+              <p className="text-sm text-[var(--text-secondary)]">
+                预览章节列表，复制单个或范围章节内容
+              </p>
+            </div>
+          </Link>
+
           {/* 格式修复工具 */}
           <Link href="/fix" className="group">
             <div className="rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] p-8 transition-all hover:border-[var(--accent-color)] hover:shadow-lg hover:shadow-violet-500/10">

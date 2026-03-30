@@ -24,6 +24,7 @@ import {
   Bookmark,
   ListOrdered,
   Archive,
+  BookOpen,
 } from "lucide-react"
 
 interface SplitFile {
@@ -188,6 +189,13 @@ export default function SplitToolsPage() {
             </Link>
             <div className="flex items-center gap-2">
               <ThemeToggle />
+              <button
+                onClick={() => window.location.href = "/preview"}
+                className="flex items-center gap-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] px-4 py-2 text-sm text-[var(--text-secondary)] transition-all hover:border-[var(--border-color-hover)] hover:bg-[var(--bg-card-hover)] hover:text-[var(--text-primary)]"
+              >
+                <BookOpen className="h-4 w-4" />
+                章节预览
+              </button>
               <button
                 onClick={() => window.location.href = "/fix"}
                 className="flex items-center gap-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] px-4 py-2 text-sm text-[var(--text-secondary)] transition-all hover:border-[var(--border-color-hover)] hover:bg-[var(--bg-card-hover)] hover:text-[var(--text-primary)]"
